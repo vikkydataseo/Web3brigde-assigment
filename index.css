@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ body{
+    background-color:hsl(233, 47%, 7%);
+  
+  }
+.wrapper{
+    position: relative;
+      height:600px;
+      width: 100%;
+    }
+ .container{
+        background-color:hsl(244, 38%, 16%);
+        height: 400px;
+        width: 1440px;
+        border-radius:10px;
+        display: flex;
+        position: absolute;
+        top:50%;
+       left:50%;
+       transform:translate(-50%,-50%);
+}
+.content{
+    height: 100%;
+    width: 50%;
+  }
+  .all{
+    width: 70%;
+    height: 90%;
+    margin:0px 60px;
+    position: relative;
+    top:5%;
+  
+  }
+  h1{
+    text-align: left;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    padding:0px 60px;
+    font-weight: bolder;
+  
+  }
+  h1 span{
+    color: hsl(277, 64%, 61%);
+  }
+  p{
+    font-size: 15px;
+    color: white;
+    text-align: left;
+  color:  hsla(0, 0%, 100%, 0.75);
+  padding:0px 60px ;
+  font-family: 'Lexend Deca', sans-serif;
+  }
+  ul{
+    list-style-type: none;
+    display: flex;
+  
+  padding-left: 0px;
+}
+ul li{
+    color: white;
+    padding-top: 50px;
+    padding-left: 60px;
+  text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+  }
+ul li span{
+    display: block;
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: normal;
+  }
+  .image{
+    height: 100%;
+    width: 50%;
+    background-image: url(image-header-desktop.jpg);
+  border-radius:10px 10px 0px 0px;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size:100% 100%;
+  }
+  #down{
+    width: calc(1440px/2);
+    height: 100%;
+    background-color: hsl(277, 64%, 61%, 0.5);
+    border-radius: 10px;
+} 
+@media only screen and (max-width: 500px) {
+  .wrapper{
+
+    height:1200px;
+    width: 100%;
+
+  }
+  .container{
+    height: 900px;
+  width:375px;
+  flex-direction: column-reverse;
+   }
+   .image{
+    width: 100%;
+    height: 25%;
+     background-image: url(image-header-mobile.jpg);
+   }
+   #down{
+    width: 100%;
+   height: 100%;
+  }   
+  .content{
+    width: 100%;
+    height:75%;
+   }
+   .all{
+    width: 90%;
+   height:90%;
+   margin:0px auto;
+   margin-top: 10px;
+  }
+  h1{
+    padding: 0px 5px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  p{
+    text-align: center;
+    padding: 0px 30px;
+    margin: 0px 15px;
+   }
+   ul{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   ul li{
+    padding-left: 0px;
+    font-size: 24px;
+        text-align: center;
+  }
+  ul li span{
+        padding: 10px 0px 0px 0px;
+  }
